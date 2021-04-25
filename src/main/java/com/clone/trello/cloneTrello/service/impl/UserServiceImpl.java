@@ -5,10 +5,10 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.clone.trello.cloneTrello.model.Card;
-import com.clone.trello.cloneTrello.service.ColumnService;
+import com.clone.trello.cloneTrello.service.UserService;
 
 @Service
-public class ColumnServiceImpl implements ColumnService {
+public class UserServiceImpl implements UserService {
 
 	@Override
 	public List<Card> fetchAllCards(String value) {
