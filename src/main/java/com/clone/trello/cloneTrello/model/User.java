@@ -1,21 +1,36 @@
 package com.clone.trello.cloneTrello.model;
 
-import java.util.List;
-
-import javax.persistence.OneToMany;
-
-
 public class User {
 	
-	@OneToMany
-	private List<Card> cards;
+	String user;
+	
+	String password;
+	
+	String token;
 
-	public List<Card> getCards() {
-		return cards;
+	public String getUser() {
+		return user;
 	}
 
-	public void setCards(List<Card> cards) {
-		this.cards = cards;
+	public void setUser(String user) {
+		this.user = user;
 	}
 
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getToken() {
+		return token;
+	}
+
+	public void setToken(String token) {
+		this.token = token;
+	}
+	
+	
 }
